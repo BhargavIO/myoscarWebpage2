@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MyOscar - Home</title>
+	<link rel="stylesheet" type="text/css" href="myoscar.css"/>
+	<link rel="stylesheet" type="text/css" href="myoscar1.css"/>
+	<link rel="stylesheet" type="text/css" href="font.css"/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="newEvents.js"></script>
+	<script type="text/javascript" src="myoscar.js"></script>
+
+	<style type="text/css">
+
+	</style>
+</head>
+
+<body>
+	<section class="hbox stretch">
+		<!-- .aside --> 
+		<aside class="bg-primary aside-sm" id="nav">
+			<section class="vbox"> 
+				<header class="dker nav-bar nav-bar-fixed-top"> 
+					<a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav"> 
+						<i class="fa fa-bars"></i> 
+					</a> 
+					<a href="#" class="nav-brand" data-toggle="fullscreen"><img src="myoscar_logo.png" ></a> 
+					<a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
+						<i class="fa fa-comment-o"></i>
+					</a> 
+				</header> 
+				<section class="w-f"> 
+					<!-- user --> <div class="bg-success nav-user hidden-xs pos-rlt">
+					<div class="nav-avatar pos-rlt">
+						<a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
+							<img src="avatar.jpg" alt="" class="">
+							<span class="caret caret-white"></span>
+
+						</a><span><!-- Bhargav Palivela --></span> <ul class="dropdown-menu m-t-sm animated fadeInLeft">
+						<span class="arrow top"></span>
+						<li>
+							<a href="#">Settings</a>
+						</li> 
+						<li> 
+							<a href="#">Profile</a>
+						</li>
+						<li> 
+							<a href="#"> <span class="badge bg-danger pull-right"></span> Preferences </a>
+						</li> 
+						<li class="divider"></li>
+						<li> <a href="#">Groups</a> </li> 
+						<li> <a href="#">Access and Sharing</a> </li> 
+						<li> <a href="#">Account Audit</a> </li> 
+						<li> <a href="#">Logout</a> </li> 
+					</ul> 
+					<div class=""> 
+						<a href="#" class="h5">Bhargav Palivela</a> 
+						<p><i class="fa fa-map-marker"></i> London, UK</p> 
+					</div>
+				</div> 
+
+				<div class="nav-msg">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+						<b class="badge badge-white count-n"></b>
+					</a> 
+					<!-- notification block
+					<section class="dropdown-menu m-l-sm pull-left animated fadeInRight"> 
+						<div class="arrow left"></div>
+						<section class="panel bg-white">
+							<header class="panel-heading">
+								<strong>You have <span class="count-n">2</span> notifications</strong>
+							</header>
+							<div class="list-group">
+								<a href="#" class="media list-group-item"> 
+									<span class="pull-left thumb-sm">
+										<img src="images/avatar.jpg" alt="John said" class="img-circle"> </span> 
+										<span class="media-body block m-b-none"> Use awesome animate.css<br> <small class="text-muted">28 Aug 13</small> 
+										</span> </a>
+										<a href="#" class="media list-group-item"> 
+											<span class="media-body block m-b-none"> 1.0 initial released<br> <small class="text-muted">27 Aug 13</small>
+											</span> 
+										</a>
+									</div> 
+
+									<footer class="panel-footer text-sm">
+										<a href="#" class="pull-right">
+											<i class="fa fa-cog"></i>
+										</a>
+										<a href="#">See all the notifications</a> 
+									</footer> 
+								</section>
+							</section>
+						--> 
+					</div> 
+				</div>
+				<!-- / user --> <!-- nav -->
+				<nav class="nav-primary hidden-xs">
+					<ul class="nav"> 
+						<li class="active">
+							<a href="index.html"> 
+								<i class="fa fa-eye"></i> <span>Home</span> 
+							</a> 
+						</li> 
+						<li class="dropdown-submenu">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+								<i class="fa fa-flask"></i> <span>Allergies</span>
+							</a>
+
+						</li>
+						<li class="dropdown-submenu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-file-text"></i> <span>Immunisations</span> </a>
+						</li> 
+						<li> <a href=""> <b class="badge bg-primary pull-right"></b> <i class="fa fa-envelope-o"></i> <span>Messages <div class="nav-msg"> 
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+								<b class="badge badge-white count-n">2</b>
+							</a> </div></span> </a> </li> 
+							<li class="dropdown-submenu"> <a href=""> <i class="fa fa-tasks"></i> <span>Medications</span> </a> 
+								<ul class="dropdown-menu">
+									<li> <a href="">My List</a> </li> 
+									<li> <a href="">Medication Effects : Baseline</a> </li>
+									<li> <a href="">Medication Effects : Follow-up</a> </li>
+									<li> <a href="">Adverse Drug Reactions</a> </li>
+									<li> <a href="">BP Medication Adherence</a> </li> 
+									<li> <a href="">Patient Satisfaction</a> </li> 
+
+								</ul>
+							</li> 
+							<li> <a href=""> <i class="fa fa-pencil"></i> <span>Documents</span> </a> </li> 
+							<li class="dropdown-submenu"> <a href=""> <i class="fa fa-clock-o"></i> <span>Wellness</span> </a>
+								<ul class="dropdown-menu">
+									<li> <a href="">Blood Pressure</a> </li> 
+									<li> <a href="">Blood Pressure Chart</a> </li>
+									<li> <a href="">Blood Sugar</a> </li>
+									<li> <a href="">A1C Diabetes Test</a> </li>
+									<li> <a href="">Height and Weight</a> </li> 
+									<li> <a href="">Other Health Trackers</a> </li> 
+									<li> <a href="">Other Health Trackers Chart</a> </li>
+									<li> <a href="">General Symptoms</a> </li>
+								</ul>
+
+							</li>
+							<li> <a href=""> <i class="fa fa-clock-o"></i> <span>Treatment Choices</span> </a> </li>
+							<li> <a href=""> <i class="fa fa-clock-o"></i> <span>Surveys</span> </a> </li>
+						</ul> 
+					</nav> <!-- / nav --> <!-- note --> 
+
+					<!-- / note --> 
+				</section>
+				<!-- <footer class="footer bg-gradient hidden-xs"> 
+					<a href="modal.lockme.html" data-toggle="ajaxModal" class="btn btn-sm btn-link m-r-n-xs pull-right"> <i class="fa fa-power-off"></i> </a>
+					<a href="#nav" data-toggle="class:nav-vertical" class="btn btn-sm btn-link m-l-n-sm"> <i class="fa fa-bars"></i> </a>
+				</footer>  -->
+			</section>
+		</aside> <!-- /.aside -->
+		<!-- .vbox --> 
+
+		<section id="content" class="scrollable wrapper"> 
+		<header class="header bg-white b-b navbar-right"> <p class="date"> </p> <p class="time"></p> </header>
+
+			<section class="vbox body-box "> 
+				
+				<div >
+					<section class="panel no-borders hbox "> 
+						<aside class="bg-info lter r-l text-center v-middle card-nav"> 
+
+							<div class="floats-left"> 
+								<img src="heart.png" class="card-img" width="100px">
+
+								<p class="text-muted"><strong>Blood Pressure</strong></p>
+							</div>
+							<div class="floats-left al-mid">
+								<span class="card-rate" style="font-size: 30px;">140/90</span></br>
+								<span class="card-rate" style="font-size: 30px;">77</span>
+							</div>
+						</aside> 
+						<aside class="bg-primary clearfix lter r-r text-right v-middle"> 
+
+
+							<div class="floats-left"> 
+								<img src="height-weight.png" class="card-img" width="100px">
+
+								<p class="text-muted"><strong>Height and Weight</strong></p>
+
+							</div>
+							<div class="floats-left al-mid" >
+								<span class="card-rate" style="font-size: 30px;">5.6"</span></br>
+								<span class="card-rate" style="font-size: 30px;">66 <small>kgs</small></span>
+							</div>
+
+
+						</aside> 
+					</section>
+				</div>
+
+				<!--  Allergies  -->	
+
+				<div>
+
+				</div>
+				<div class="health-trackers allergies">
+					
+					<section class="panel no-borders"> 
+						<header class="panel-heading bg-success lter">
+							
+							<span class="h4">Allergies<br> <small class="text-muted"></small> </span> 
+							</header>
+<div class="text-center padder m-b-n-sm m-t-sm">
+							</div>
+							
+							 </section>
+							<div class="aller-table table-cont">
+								<table cellspacing="0" class="table table-striped b-t text-sm" >
+									<thead>
+										<tr class="thead">
+											<th>What are you allergic to</th>
+											<th>What is the allergic reaction</th>
+											<th>Severity of the reaction</th>
+											<th>Onset of reaction</th>
+											<th>Age of onset</th>
+											<th>Added By</th>
+											<th>Edit</th>
+										</tr>
+									</thead>
+									<tr class="parent">
+									<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+									
+									<tr class="parent">
+										<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+									<tr>
+										<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+									<tr>
+										<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+								</table>
+								<button  class="btn btn-sm btn-white btn-more" data-toggle="class:show"> 
+										<span class="text">More</span><span class="text-active">Less</span> 
+								</button>
+
+<span class="pull-right add" title="Add"></span>
+							</div>
+
+						</div>
+						<div>
+					<section class="panel no-borders hbox"> 
+						<aside class="bg-blood-sugar lter r-l text-center v-middle"> 
+
+							<div class="floats-left"> 
+								<img src="blood-sugar.png" class="card-img" width="100px">
+
+								<p class="text-muted"><strong>Blood Sugar</strong></p>
+							</div>
+							<div class="floats-left al-mid">
+								<span class="card-rate" style="font-size: 30px;">240 </br>mmol/L</span></br>
+								
+							</div>
+						</aside> 
+						<aside class="bg-diabetes clearfix lter r-r text-right v-middle"> 
+
+
+							<div class="floats-left"> 
+								<img src="a1c-diabetes.png" class="card-img" width="100px">
+
+								<p class="text-muted"><strong>A1C Diabetes Test</strong></p>
+
+							</div>
+							<div class="floats-left al-mid" >
+								<span class="card-rate" style="font-size: 30px;">20 %</span></br>
+							
+							</div>
+
+
+						</aside> 
+					</section>
+				</div>
+
+
+				<div class="health-trackers Immunisation allergies">
+			
+					<section class="panel no-borders"> 
+						<header class="panel-heading bg-success lter">
+							
+							<span class="h4">Immunisation<br> <small class="text-muted"></small> </span> 
+</header>
+							<div class="text-center padder m-b-n-sm m-t-sm">
+							</div>
+							 </section>
+							<div class="aller-table table-cont">
+								<table cellspacing="0" class="table table-striped b-t text-sm">
+									<thead>
+										<tr class="thead">
+											<th>What are you allergic to</th>
+											<th>What is the allergic reaction</th>
+											<th>Severity of the reaction</th>
+											<th>Onset of reaction</th>
+											<th>Age of onset</th>
+											<th>Added By</th>
+											<th>Edit</th>
+										</tr>
+									</thead>
+									<tr class="parent">
+									<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+									<tr class="parent">
+										<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+									<tr>
+										<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+									<tr>
+										<td>Dust</td>
+										<td>Sneezes</td>
+										<td>Medium</td>
+										<td>Sneezes</td>
+										<td>10</td>
+										<td>Myself</td>
+										<td><img src="edit.png" width="13px;" class="th-sortable"><img src="delete.png" width="13px;" class="th-sortable"></td>
+									</tr>
+								</table>
+								<button  class="btn btn-sm btn-white btn-more" data-toggle="class:show"> 
+										<span class="text">More</span><span class="text-active">Less</span> 
+								</button>
+
+							<span class="pull-right add" title="Add"></span>
+							</div>
+
+						</div>
+						
+					
+
+					</section>
+
+					<!-- /.vbox --> 
+				</section>
+
+
+			</body>
+
+			<div id="specialbackground">
+
+			</div>
+
+			<div class="bg-danger wrapper hidden-vertical animated fadeInUp text-sm addBlockPopup"> 
+				<a href="#" data-dismiss="alert" class="pull-right m-r-n-sm m-t-n-sm"><i class="">x</i></a>
+				<table class="popupTable">
+
+					<tr>
+						<td><input type="text" name="" class="form-control " placeholder="What are you allergic to"></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="" class="form-control" placeholder="What is the allergic reaction"></td>
+
+					</tr>
+					<tr>
+						<td><input type="text" name="" class="form-control" placeholder="Severity of the reaction"></td>
+					</tr>
+					<tr>
+						<td><input type="text" name="" class="form-control" placeholder="Onset of reaction"></td>
+
+					</tr>
+					<tr>
+						<td><input type="text" name="" class="form-control" placeholder="Age of onset"></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" class ="btn btn-s-md btn-default" style="width: 100%;" name="" value="Add">
+							<a style="width: 100%;" name="" class="btn btn-s-md btn-danger cancel">CANCEL</a>
+						</td>
+					</tr>
+
+				</table>
+			</div> 
+
+			</html>
